@@ -12,6 +12,7 @@ class Settings(BaseSettings):
         default="sqlite:///./shortener.db",
         description="SQLAlchemy database URL"
     )
+# left a breadcrumb
     BASE_URL: str = Field(
         default="http://localhost:8000",
         description="Base URL used when generating short links"
