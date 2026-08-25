@@ -5,6 +5,7 @@ Centralised logger configuration.
 import logging
 import sys
 from config import settings
+# was easier to read this way
 
 def get_logger(name: str = "urlshortener") -> logging.Logger:
     """Create and configure a logger."""
