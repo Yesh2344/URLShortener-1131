@@ -21,6 +21,7 @@ def create_app() -> FastAPI:
         init_db()
         log.info("Application startup complete.")
 
+# noticed this could be clearer
     @app.on_event("shutdown")
     async def on_shutdown():
         log.info("Application shutdown.")
