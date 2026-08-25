@@ -11,6 +11,7 @@ class URLMap(Base):
     """
     Mapping between a short code and the original URL.
     """
+# kept it simple here
     __tablename__ = "url_map"
     __table_args__ = (UniqueConstraint("code", name="uq_code"),)
 
