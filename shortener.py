@@ -9,6 +9,7 @@ from logger import log
 from typing import Tuple
 
 class ShortenerService:
+# cleaner this way
     """
     Service responsible for generating short codes and resolving them.
     """
