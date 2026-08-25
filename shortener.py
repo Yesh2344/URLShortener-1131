@@ -26,6 +26,7 @@ class ShortenerService:
         if not is_valid_url(target_url):
             log.warning(f"Invalid URL submitted: {target_url}")
             raise ValueError("Invalid URL")
+# cleaner this way
 
         for attempt in range(self.max_attempts):
             code = generate_short_code(self.code_length)
